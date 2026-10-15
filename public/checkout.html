@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sazón — Tu pedido</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="backdrop"></div>
+
+<div class="phone">
+  <div class="phone-notch"></div>
+
+  <header class="app-header">
+    <a class="icon-btn" href="index.html" aria-label="Regresar">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 5 7 12l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <span class="brand-name">Pedido</span>
+    <span class="espacio-vacio"></span>
+  </header>
+
+  <main class="app-body">
+    <div class="section-title">
+      <h2>Resumen</h2>
+    </div>
+
+    <div class="caja">
+      <div id="listaPedido"></div>
+      <div class="summary-row"><span>Sub total</span><span id="subtotal">Q0</span></div>
+      <div class="summary-row"><span>Envío</span><span id="envio">Q0</span></div>
+      <div class="summary-row total"><span>Total</span><span id="total">Q0</span></div>
+    </div>
+
+    <div class="field">
+      <label for="notas">Añade notas o comentarios (opcional)</label>
+      <input type="text" id="notas" maxlength="200" placeholder="Ej. sin cebolla, tocar el timbre">
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="btn-row">
+      <a class="btn btn-ghost" href="index.html">Regresar</a>
+      <button class="btn btn-primary" type="button" id="continuarPago">Continuar al pago</button>
+    </div>
+  </footer>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

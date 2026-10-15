@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sazón — Pedido realizado</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="backdrop"></div>
+
+<div class="phone">
+  <div class="phone-notch"></div>
+
+  <header class="app-header">
+    <span class="espacio-vacio"></span>
+    <span class="brand-name">Pedido realizado</span>
+    <span class="espacio-vacio"></span>
+  </header>
+
+  <main class="app-body">
+    <div class="confirm-wrap">
+      <div class="confirm-badge">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4.5 4.5L19 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <h1>¡Pedido confirmado!</h1>
+      <div class="pill">Número de pedido <span id="numeroPedido">...</span></div>
+
+      <div class="eta-card">
+        <div class="lbl">Tiempo estimado de entrega</div>
+        <div class="num">35 - 45 min</div>
+      </div>
+
+      <div class="resumen-final" id="resumenFinal"></div>
+      <p class="nota-pedido" id="notaPedido"></p>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <a class="btn btn-primary" href="index.html">Regresar</a>
+  </footer>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

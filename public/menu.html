@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sazón — Detalle del platillo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="backdrop"></div>
+
+<div class="phone">
+  <div class="phone-notch"></div>
+
+  <header class="app-header">
+    <a class="icon-btn" href="index.html" aria-label="Regresar">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 5 7 12l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <span class="brand-name">Menú del día</span>
+    <span class="espacio-vacio"></span>
+  </header>
+
+  <main class="app-body">
+    <div class="dish-photo-large" id="fotoPlatillo"></div>
+
+    <h1 class="detail-title" id="nombrePlatillo">Cargando...</h1>
+    <span class="price-pill" id="precioPlatillo"></span>
+    <p class="detail-desc" id="descripcionPlatillo"></p>
+
+    <div class="section-title">
+      <h2 class="pequeno">Cantidad</h2>
+      <div class="stepper">
+        <button type="button" id="menos" aria-label="Quitar uno">–</button>
+        <span id="cantidad">1</span>
+        <button type="button" id="mas" aria-label="Agregar uno">+</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="btn-row">
+      <a class="btn btn-ghost" href="index.html">Regresar</a>
+      <button class="btn btn-primary" type="button" id="agregarPedido">Añadir · <span id="totalPlatillo">Q0</span></button>
+    </div>
+  </footer>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

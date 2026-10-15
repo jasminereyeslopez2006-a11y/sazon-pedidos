@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sazón — Ingresa o regístrate</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="backdrop"></div>
+
+<div class="phone">
+  <div class="phone-notch"></div>
+
+  <header class="app-header">
+    <a class="icon-btn" href="index.html" aria-label="Regresar">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 5 7 12l7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <span class="brand-name">Sazón</span>
+    <span class="espacio-vacio"></span>
+  </header>
+
+  <main class="app-body">
+    <h1 id="authTitle">Regístrate</h1>
+    <p class="intro">Crea tu cuenta para guardar tus pedidos y hacer tu compra.</p>
+
+    <form id="authForm">
+      <div class="field" id="nameField">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+      </div>
+      <div class="field">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+      <div class="field">
+        <label for="clave">Clave</label>
+        <input type="password" id="clave" placeholder="Mínimo 6 caracteres" required>
+      </div>
+
+      <p class="mensaje-error" id="mensajeError"></p>
+
+      <button class="btn btn-primary" type="submit" id="authSubmit">Crear cuenta</button>
+
+      <p class="switch-line" id="authToggle">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+    </form>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
