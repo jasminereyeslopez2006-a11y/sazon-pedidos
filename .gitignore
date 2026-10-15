@@ -1,0 +1,10 @@
+   # Dependencias (se vuelven a instalar con npm install)
+   node_modules/
+
+   # Variables de entorno (contienen claves, NUNCA se suben)
+   .env
+
+   # Archivos del sistema y registros
+   .DS_Store
+   Thumbs.db
+   *.log
